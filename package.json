@@ -1,0 +1,11 @@
+{
+  "name": "scraping-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Furtco01",
+  "license": "MIT",
+  "dependencies": {
+    "d3-dsv": "^2.0.0",
+    "nightmare": "^3.0.2"
+  }
+}
