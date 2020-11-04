@@ -3,20 +3,52 @@ const Nightmare = require('nightmare');
 const { readFileSync, writeFileSync } = require('fs');
 /*const numbers = readFileSync('./tesco-title-numbers.csv', 
   {encoding: 'utf8'}).trim().split('\n');*/
-const START = 'https://www.dermstore.com/';
+const START = 'https://www.dermstore.com/shop_Sale_504310.htm';
 
   const getSkincare = async () => {
     //console.log(`Now checking ${id}`);
-    const nightmare = new Nightmare({ show: true });
+    const nightmare = new Nightmare({ show: true, webPreferences: {images: false }});
     // Go to initial start page, navigate to Detail search
-    try {
+    /*try {
         await nightmare
           .goto(START)
           .wait('.dropdown-toggle sale-cat')
           .click('.dropdown-toggle sale-cat');
       } catch(e) {
         console.error(e);
-      }
+      }*/
+    try {
+      await nightmare
+        .goto(START)
+        .wait('checkbox_500014')
+        .click('checkbox_500014');
+    } catch(e) {
+      console.error(e);
+    }
+    try {
+      await nightmare
+        .goto(START)
+        .wait('checkbox_300082')
+        .click('checkbox_300082');
+    } catch(e) {
+      console.error(e);
+    }
+    try {
+      await nightmare
+        .goto(START)
+        .wait('checkbox_500837')
+        .click('checkbox_500837');
+    } catch(e) {
+      console.error(e);
+    }
+    try {
+      await nightmare
+        .goto(START)
+        .wait('checkbox_500001')
+        .click('checkbox_500001');
+    } catch(e) {
+      console.error(e);
+    }
     try {
       await nightmare
         .goto(START)
