@@ -24,10 +24,10 @@
 Electron browser will navigate to initially
 1. Edit the wait(), type(), and click() statements to guide nightmare
 to the desired elements
-* If necessary, edit the replace statements in thehandleResultData function
+1. If necessary, edit the replace statements in thehandleResultData function
 to accurately manipulate the returned data.
-* Save the file.
-* Run node index.js
+1. Save the file.
+1. Run node index.js
 
 #### You will see a browser pop up and output in the terminal and perform the tasks you set. Once it is done, it outputs the result to the output.csv file.
 
