@@ -20,9 +20,9 @@
 
 ## To Run
 
-* Open up index.js and edit the start variable to determine where the
+1. Open up index.js and edit the start variable to determine where the
 Electron browser will navigate to initially
-* Edit the wait(), type(), and click() statements to guide nightmare
+1. Edit the wait(), type(), and click() statements to guide nightmare
 to the desired elements
 * If necessary, edit the replace statements in thehandleResultData function
 to accurately manipulate the returned data.
