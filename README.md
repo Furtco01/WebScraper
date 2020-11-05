@@ -31,6 +31,10 @@ to accurately manipulate the returned data.
 
 #### You will see a browser pop up and output in the terminal and perform the tasks you set. Once it is done, it outputs the result to the output.csv file.
 
+## References
+
+1. [Nightmare.js Tutorial](https://medium.com/journocoders/nightmarishly-good-scraping-with-nightmare-js-and-async-await-b7b20a38438f)
+
 
 
 
