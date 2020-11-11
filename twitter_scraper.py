@@ -19,6 +19,8 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 
 ##### Twitter user handle to be scraped
 username = 'seangarrette'
+#'skinclasshero'
+#'seangarrette'
 ##### Number of tweets collected
 count = 200
 
@@ -29,9 +31,9 @@ def handleTweetResults(data):
       
       ##### Define the new names of your columns
       newcols = {
-      0: 'DateTime ', 
-      1: 'Hash ', 
-      2: 'Tweet '
+      0: 'DateTime', 
+      1: 'Hash', 
+      2: 'Tweet'
       }
       ###### Use `rename()` to rename your columns
       tweets_df.rename(columns=newcols, inplace=True)
