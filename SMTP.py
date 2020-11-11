@@ -36,8 +36,10 @@ image_name = './img/'
 message_html = """\
 <html>
   <body style="background-color:#fbefef;">
-    <img src="cid:image1" alt="silhouette of woman">
-    <section style="font-family:helvetica;">
+    <p style="text-align:center;">
+    <img src="cid:image1" alt="asian woman just after a shower" width="250" height="250">
+    </p>
+    <section">
     <br>
     Hey Liv,
     <br>
@@ -58,7 +60,7 @@ message_html = """\
        Below are Sean G's recent twitter mentions, hopefully he has a
        few suggestions for you.
     </section>
-    <section style="font-family:helvetica;">
+    <section>
        <br>
        <strong> Sean Garrette's Tweets: </strong>
        <br>
@@ -73,8 +75,8 @@ message_html = """\
 """.format(tweet_content, image_url)
 
 # This assumes the image is in the current directory
-with open('./image1.png', 'rb') as fp:
-    msgImage = MIMEImage(fp.read(), _subtype="html")
+with open('./image1.jpg', 'rb') as fp:
+    msgImage = MIMEImage(fp.read(), _subtype="jpeg")
 
 
 # Define the image's ID as referenced above
