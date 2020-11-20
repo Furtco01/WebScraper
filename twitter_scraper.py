@@ -1,16 +1,19 @@
+#!/usr/bin/env python3
+
 ##### imports needed for script
 import tweepy
 import pandas as pd
 import time
 import requests
 import sys
+import config
 
 ##### Credentials to access Twitter API
 ##### TODO: Put these in another file and reference them
-consumer_key = 'hVYEbosmMILF55ff1hh1p3s2Y'
-consumer_secret = 'LBXn7GtJEXJoIalokaNJuO6jfaztt4vjarIZcgAfuBzZpykHBy'
-access_token = '1324358150250745859-yVXqgiA83X4aMEfFHxArpIcAFEgo35'
-access_token_secret = 'ipwu4J2VLfyGBfVSNAHixgFs8fv6BaVK7AumCsuBV85we'
+consumer_key = config.consumer_key
+consumer_secret = config.consumer_secret
+access_token = config.access_token
+access_token_secret = config.access_token_secret
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 

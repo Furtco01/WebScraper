@@ -1,0 +1,1 @@
+5 6 * * 0 /Users/Olivia/Documents/Collin/scraping-project && /Users/Olivia/.pyenv/shims/python3 twitter_scraper.py
