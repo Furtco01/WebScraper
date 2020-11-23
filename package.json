@@ -5,7 +5,10 @@
   "author": "Furtco01",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^4.1.0",
+    "cowsay": "^1.4.0",
     "d3-dsv": "^2.0.0",
-    "nightmare": "^3.0.2"
+    "nightmare": "^3.0.2",
+    "progress": "^2.0.3"
   }
 }
